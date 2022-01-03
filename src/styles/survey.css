@@ -1,0 +1,15 @@
+.survey_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    height: 84vh;
+}
+
+.survey_subcontainer {
+    height: 74vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+}

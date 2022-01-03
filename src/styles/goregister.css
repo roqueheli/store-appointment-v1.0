@@ -1,0 +1,16 @@
+.goregister_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84vh;
+    flex-direction: column;
+    width: 100%;
+}
+
+.goregister_subcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 74vh;
+}
