@@ -1,0 +1,57 @@
+//Get Users
+{
+    "users": [
+      {{# repeat (queryParam 'total' '5') }}
+        {
+          "userId": "{{ faker 'random.number' min=1 max=1000 }}",
+          "firstname": "{{ faker 'name.firstName' }}",
+          "lastname": "{{ faker 'name.lastName' }}",
+          "email": "{{ faker 'internet.email' }}",
+          "birthDate": "{{ faker 'date.past' }}",
+          "profilePhoto": "{{faker 'internet.avatar'}}",
+          "telephone": "{{faker 'phone.phoneNumber'}}",
+          "urlInstagram": "{{faker 'internet.url'}}",
+          "connected": "{{faker 'random.boolean'}}"
+        },
+      {{/ repeat }}
+    ]
+}
+
+//Get Clients
+{
+    "clients": [
+      {{# repeat (queryParam 'total' '15') }}
+        {
+          "clientId": "{{ faker 'random.number' min=1 max=1000 }}",
+          "firstname": "{{ faker 'name.firstName' }}",
+          "lastname": "{{ faker 'name.lastName' }}",
+          "email": "{{ faker 'internet.email' }}",
+          "birthDate": "{{ faker 'date.past' }}",
+          "telephone": "{{faker 'phone.phoneNumber'}}",
+          "lastService": "{{faker 'date.past'}}",
+          "services": "{{faker 'random.number' min=0 max=100 }}",
+          "urlInstagram": "{{faker 'internet.url'}}"
+        },
+      {{/ repeat }}
+    ]
+}
+
+//Get Services
+{
+    "services": [
+      {{# repeat (queryParam 'total' '8') }}
+        {
+          "serviceId": "{{ faker 'random.number' min=1 max=1000 }}",
+          "service": "{{ faker 'company.companyName' }}",
+          "duration": "{{  faker 'random.number' min=20 max=45 }}",
+          "detail": [{{# repeat (queryParam 'total' '4') }} 
+            {
+              "subServiceId": "{{ faker 'random.number' min=1 max=1000 }}",
+              "subService": "{{ faker 'company.companyName' }}"
+            },
+            {{/ repeat }}
+          ]
+        },
+      {{/ repeat }}
+    ]
+}
