@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import GlobalProvider from './context/GlobalContext';
-import App from './App';
+import App from './components/App';
 import { BrowserRouter } from 'react-router-dom';
-import './index.css';
+import '../src/styles/index.css';
 
 ReactDOM.render(
   <React.StrictMode>

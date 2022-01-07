@@ -12,26 +12,26 @@ function Main() {
     return (
         <>
          <Header />
-         <div className='grid_container'>
+         <main role='main' className='grid_container'>
             <section className='rrss_container'>
                 <h1>¡BIENVENIDOS!</h1>
-                <h3>SIGUENOS EN NUESTRAS REDES SOCIALES!!</h3>
+                <h3>FOLLOW US</h3>
                 <div className='rrss_subcontainer'>
                     <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram}/>
-                    <p>barberiaelrusso</p>
+                    <p>barberia</p>
                     </a>
                     <a href="https://www.twitter.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter}/>
-                        <p>barberiaelrusso</p>
+                        <p>barberia</p>
                     </a>
                     <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook}/>
-                        <p>barberiaelrusso</p>
+                        <p>barberia</p>
                     </a>
                 </div>
             </section>
-            <button onClick={() => navigate('/appointment')} className='button_appointment'>Tomar Hora</button>
-            <button onClick={() => navigate('/register')} className='button_register'>Registrarse</button>
-            <button onClick={() => navigate('/survey')} className='button_survey'>Evaluar</button>
-         </div>
+            <button onClick={() => navigate('/appointment')} className='button_appointment glow-on-hover'>Tomar Hora</button>
+            <button onClick={() => navigate('/register')} className='button_register glow-on-hover'>Registrarse</button>
+            <button onClick={() => navigate('/survey')} className='button_survey glow-on-hover'>Evaluar</button>
+         </main>
          <Footer />
         </>
     )

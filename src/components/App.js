@@ -1,10 +1,10 @@
-import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Main from './components/Home/Main';
-import Appointment from './components/Appointment/Appointment';
-import Register from './components/Register/Register';
-import Survey from './components/Survey/Survey';
-import NotFound from './components/Commons/NotFound';
+import Main from './Home/Main';
+import Appointment from './Appointment/Appointment';
+import Register from './Register/Register';
+import Survey from './Survey/Survey';
+import NotFound from './Commons/NotFound';
+import '../styles/App.css';
 
 function App() {
   return (

@@ -4,9 +4,12 @@
     align-items: center;
     width: 100%;
     height: 3rem;
+    background: #24262b;
+    padding: 70px 0;
 }
 
 .footer_texto {
+    color: #fff;
     font-size: 13px;
     margin-left: 4rem;
 }
@@ -14,7 +17,6 @@
 .footer_texto,
 .iconos_footer {
     display: flex;
-    align-items: center;
     justify-content: center;
     height: 2rem;
     width: 20rem;
@@ -23,9 +25,68 @@
 .iconos_footer {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     margin-right: 4rem;
 }
 
-.iconos_footer a:hover {
-    color: lightgrey;
+.iconos_footer ul {
+    display: flex;
+    list-style: none;
 }
+
+.iconos_footer a:hover {
+    color: #24262b;
+    color: #fff;
+}
+
+.footer_container .social_links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.iconos_footer h4 {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.iconos_footer h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 20%;
+}
+
+.iconos_footer ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.iconos_footer ul li a {
+    font-size: 16px;
+    color: #bbb;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer_container ul li a:hover {
+    color: #fff;
+    padding-left: 8px;
+}
+

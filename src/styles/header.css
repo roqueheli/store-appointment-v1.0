@@ -2,6 +2,7 @@
     display: flex;
     width: 100%;
     height: 5rem;
+    background: #24262b;
 }
 
 .logo_container,
@@ -9,6 +10,10 @@
     display: flex;
     align-items: center;
     width: 50%;
+}
+
+.nav_container {
+    justify-content: center;
 }
 
 .logo_container img {
